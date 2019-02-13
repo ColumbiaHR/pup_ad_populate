@@ -54,6 +54,10 @@ function getTextField(elementID){
   return document.getElementById(elementID).value;
 }
 /* ex: getTextField("lRoleID_fieldTitle"); */
+}
+function getDropdown(elementID){
+  return document.getElementById(elementID).text;
+}
 function getSelectField(elementID){
   return document.getElementById(elementID).options[document.getElementById(elementID).selectedIndex].text;
 }
@@ -98,14 +102,13 @@ function getEssentialJobDuties(){
  * Set up the data elements to populate the wysiwyg:
  */
 var pupPdElements = {
+  pupPdJobType:    '<p>' + getDropdown'GenericListType_regulartemporary') + '</p>'
+  pupPdBargainingUnit:    '<p>' + getDropdown('lAgreementTypeID') + '</p>',
   pupPdRegTemp:    '<p>' + getTextField('sOther3') + '</p>',
   pupPdTempDuration:    '<p>' + getTextField('sOther6') + '</p>',
-  pupPdSalaryDetails:    '<p>' + getTextField('sSalary') + '</p>',
-  pupPdBargainingUnit:    '<p>' + getTextField('lAgreementTypeID') + '</p>',
   pupPdHours:    '<p>' + getTextField('sOther5') + '</p>',
-  pupPdSalaryDetails:    '<p>' + getTextField('sSalary') + '</p>',
-  pupPdJobType:    '<p>' + getTextField('GenericListType_regulartemporary') + '</p>'
-  
+  pupPdSalaryDetails:    '<p>' + getTextField('sSalary') + '</p>'
+ 
 };
 
 /**
@@ -113,11 +116,11 @@ var pupPdElements = {
  * insert a clean table w/ id's. Note: this was a nice multi-line string but didn't function well as a bookmarklet
  */
 newBody  = '<ul>';
+newBody += '<li id="pupPdJobType">Job Type: ' + pupPdElements.pupPdJobType  + '</li>';
+newBody += '<li id="pupPdBargainingUnit">Bargaining Unit: ' + pupPdElements.pupPdBargainingUnit + '</li>';
 newBody += '<li id="pupPdRegTemp">Regular/Temporary: ' + pupPdElements.pupPdRegTemp  + '</li>';
 newBody += '<li id="pupPdTempDuration">Duration if Temporary: ' + pupPdElements.pupPdTempDuration  + '</li>';
-newBody += '<li id="pupPdBargainingUnit">Bargaining Unit: ' + pupPdElements.pupPdBargainingUnit + '</li>';
 newBody += '<li id="pupPdHours">Hours Per Week: ' + pupPdElements.pupPdHours  + '</li>';
-newBody += '<li id="pupPdJobType">Job Type: ' + pupPdElements.pupPdJobType  + '</li>';
 newBody += '<li id="pupPdSalaryDetails">Salary Range: ' + pupPdElements.pupPdSalaryDetails  + '</li>';
 newBody += '</ul>';
 replaceText(newBody, "sOverview_ifr");
