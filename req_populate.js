@@ -104,7 +104,7 @@ var pupPdElements = {
   pupPdBargainingUnit:    '<p>' + getTextField('lAgreementTypeID') + '</p>',
   pupPdHours:    '<p>' + getTextField('sOther5') + '</p>',
   pupPdSalaryDetails:    '<p>' + getTextField('sSalary') + '</p>',
-  pupPdJobType:    '<p>' + getTextField('GenericListType_regulartemporary') + '</p>'
+  pupPdJobType:    '<p>' + getTextField('GenericListType_regulartemporary') + '</p>',
   
 };
 
