@@ -54,7 +54,6 @@ function getTextField(elementID){
   return document.getElementById(elementID).value;
 }
 /* ex: getTextField("lRoleID_fieldTitle"); */
-}
 function getDropdown(elementID){
   return document.getElementById(elementID).text;
 }
