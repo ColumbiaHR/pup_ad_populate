@@ -101,10 +101,10 @@ var pupPdElements = {
   pupPdRegTemp:    '<p>' + getTextField('sOther3') + '</p>',
   pupPdTempDuration:    '<p>' + getTextField('sOther6') + '</p>',
   pupPdSalaryDetails:    '<p>' + getTextField('sSalary') + '</p>',
-  pupPdBargainingUnit:    '<p>' + getSelectField('lAgreementTypeID') + '</p>',
+  pupPdBargainingUnit:    '<p>' + getTextField('lAgreementTypeID') + '</p>',
   pupPdHours:    '<p>' + getTextField('sOther5') + '</p>',
   pupPdSalaryDetails:    '<p>' + getTextField('sSalary') + '</p>',
-  pupPdJobType:    '<p>' + getSelectField('GenericListType_regulartemporary') + '</p>'
+  pupPdJobType:    '<p>' + getTextField('GenericListType_regulartemporary') + '</p>'
   
 };
 
