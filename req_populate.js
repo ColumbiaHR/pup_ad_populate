@@ -102,8 +102,8 @@ function getEssentialJobDuties(){
  * Set up the data elements to populate the wysiwyg:
  */
 var pupPdElements = {
-  pupPdJobType:    '<p>' + getDropdown('GenericListType_regulartemporary') + '</p>',
-  pupPdBargainingUnit:    '<p>' + getDropdown('lAgreementTypeID') + '</p>',
+  pupPdJobType:    '<p>' + getTextfield('GenericListType_regulartemporary') + '</p>',
+  pupPdBargainingUnit:    '<p>' + getTextfield('lAgreementTypeID') + '</p>',
   pupPdRegTemp:    '<p>' + getTextField('sOther3') + '</p>',
   pupPdTempDuration:    '<p>' + getTextField('sOther6') + '</p>',
   pupPdHours:    '<p>' + getTextField('sOther5') + '</p>',
