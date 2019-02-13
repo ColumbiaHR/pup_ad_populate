@@ -98,8 +98,14 @@ function getEssentialJobDuties(){
  * Set up the data elements to populate the wysiwyg:
  */
 var pupPdElements = {
-  pupPdRegTempAnita:    '<p>' + getTextField('sOther3') + '</p>',
-  pupPdSalaryDeets:    '<p>' + getTextField('sSalary') + '</p>'
+  pupPdRegTemp:    '<p>' + getTextField('sOther3') + '</p>',
+  pupPdTempDuration:    '<p>' + getTextField('sOther6') + '</p>',
+  pupPdSalaryDetails:    '<p>' + getTextField('sSalary') + '</p>'
+  pupPdBargainingUnit:    '<p>' + getTextField('lAgreementTypeID') + '</p>'
+  pupPdHours:    '<p>' + getTextField('sOther5') + '</p>'
+  pupPdSalaryDetails:    '<p>' + getTextField('sSalary') + '</p>'
+  pupPdJobType:    '<p>' + getTextField('GenericListType_regulartemporary') + '</p>'
+  
 };
 
 /**
@@ -107,8 +113,12 @@ var pupPdElements = {
  * insert a clean table w/ id's. Note: this was a nice multi-line string but didn't function well as a bookmarklet
  */
 newBody  = '<ul>';
-newBody += '<li id="pupPdRegTempAnita">Regular/Temporary: ' + pupPdElements.pupPdRegTempAnita  + '</li>';
-newBody += '<li id="pupPdSalaryDeets">Salary Range: ' + pupPdElements.pupPdSalaryDeets  + '</li>';
+newBody += '<li id="pupPdRegTemp">Regular/Temporary: ' + pupPdElements.pupPdRegTemp  + '</li>';
+newBody += '<li id="pupPdRegTemp">Duration if Temporary: ' + pupPdElements.pupPdTempDuration  + '</li>';
+newBody += '<li id="pupPdRegTemp">Bargaining Unit: ' + pupPdElements.pupPdBargainingUnit + '</li>';
+newBody += '<li id="pupPdRegTemp">Hours Per Week: ' + pupPdElements.pupPdHours  + '</li>';
+newBody += '<li id="pupPdRegTemp">Job Type: ' + pupPdElements.pupPdJobType  + '</li>';
+newBody += '<li id="pupPdSalaryDetails">Salary Range: ' + pupPdElements.pupPdSalaryDetails  + '</li>';
 newBody += '</ul>';
 replaceText(newBody, "sOverview_ifr");
 
