@@ -55,7 +55,8 @@ function getTextField(elementID){
 }
 /* ex: getTextField("lRoleID_fieldTitle"); */
 function getSelectField(elementID){
-  return document.getElementById(elementID).options[document.getElementById(elementID).selectedIndex].text;
+  //return document.getElementById(elementID).options[document.getElementById(elementID).selectedIndex].text;
+  return document.getElementById(elementID)[document.getElementById(elementID).selectedIndex].text;
 }
 /* ex getSelectField("lDepartmentID"); */
 
@@ -106,7 +107,7 @@ var pupPdElements = {
   pupPdRegTemp:         getTextField('sOther3'),
   pupPdTempDuration:    getTextField('sOther6'),
   pupPdSalaryDetails:   getTextField('sSalary'),
-  pupPdBargainingUnit:  getTextField('lAgreementTypeID'),
+  pupPdBargainingUnit:  getSelectField('lAgreementTypeID'),
   pupPdHours:           getTextField('sOther5'),
   pupPdSalaryDetails:   getTextField('sSalary'),
   pupPdJobType:         getTextFieldDropdown('GenericListType_regulartemporary_chosen')
