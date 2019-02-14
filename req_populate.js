@@ -103,13 +103,13 @@ function getEssentialJobDuties(){
  * Set up the data elements to populate the wysiwyg:
  */
 var pupPdElements = {
-  pupPdRegTemp:    '<p>' + getTextField('sOther3') + '</p>',
-  pupPdTempDuration:    '<p>' + getTextField('sOther6') + '</p>',
-  pupPdSalaryDetails:    '<p>' + getTextField('sSalary') + '</p>',
-  pupPdBargainingUnit:    '<p>' + getTextField('lAgreementTypeID') + '</p>',
-  pupPdHours:    '<p>' + getTextField('sOther5') + '</p>',
-  pupPdSalaryDetails:    '<p>' + getTextField('sSalary') + '</p>',
-  pupPdJobType:    '<p>' + getTextFieldDropdown('GenericListType_regulartemporary_chosen') + '</p>'
+  pupPdRegTemp:         getTextField('sOther3'),
+  pupPdTempDuration:    getTextField('sOther6'),
+  pupPdSalaryDetails:   getTextField('sSalary'),
+  pupPdBargainingUnit:  getTextField('lAgreementTypeID'),
+  pupPdHours:           getTextField('sOther5'),
+  pupPdSalaryDetails:   getTextField('sSalary'),
+  pupPdJobType:         getTextFieldDropdown('GenericListType_regulartemporary_chosen')
 };
 
 /**
