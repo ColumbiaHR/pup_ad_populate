@@ -56,7 +56,8 @@ function getTextField(elementID){
 /* ex: getTextField("lRoleID_fieldTitle"); */
 function getSelectField(elementID){
   var chosenOption = document.getElementById(elementID).selectedIndex;
-  return document.getElementById(elementID).options[chosenOption].text;
+  var dropdownText = document.getElementById(elementID).options[chosenOption].text;
+  return dropdownText;
 }
 /* ex getSelectField("lDepartmentID"); */
 function getDropSearchField(elementID){
