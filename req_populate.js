@@ -116,7 +116,7 @@ var pupPdElements = {
  * Create template w/ object values inserted
  * insert a clean table w/ id's. Note: this was a nice multi-line string but didn't function well as a bookmarklet
  */
-newBody  = '<ul style="color: #2c6bac;">';
+newBody  = '<ul style="color: #2c6bac; font-family: arial, helvetica, sans-serif; font-size: 9pt;">';
 newBody += '<li style="color: #ff0000;" id="pupPdJobType">Job Type: ' + pupPdElements.pupPdJobType  + '</li>';
 newBody += '<li id="pupPdBargainingUnit">Bargaining Unit: ' + pupPdElements.pupPdBargainingUnit + '</li>';
 newBody += '<li id="pupPdRegTemp">Regular/Temporary: ' + pupPdElements.pupPdRegTemp  + '</li>';
