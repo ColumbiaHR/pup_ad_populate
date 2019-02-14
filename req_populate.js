@@ -55,11 +55,14 @@ function getTextField(elementID){
 }
 /* ex: getTextField("lRoleID_fieldTitle"); */
 function getSelectField(elementID){
-  var chosenOption = document.getElementById(elementID).selectedIndex;
-  var dropdownText = document.getElementById(elementID).options[chosenOption].text;
-  return dropdownText;
+  return document.getElementById(elementID).options[document.getElementById(elementID).selectedIndex].text;
 }
 /* ex getSelectField("lDepartmentID"); */
+
+function getTextFieldDropdown(elementID){
+  return document.getElementById(elementID).innerText;
+}
+
 function getDropSearchField(elementID){
   result = null;
   if (typeof document.querySelectorAll('#' + elementID + ' .result-selected')[0] !== "undefined") {
@@ -106,7 +109,7 @@ var pupPdElements = {
   pupPdBargainingUnit:    '<p>' + getSelectField('lAgreementTypeID') + '</p>',
   pupPdHours:    '<p>' + getTextField('sOther5') + '</p>',
   pupPdSalaryDetails:    '<p>' + getTextField('sSalary') + '</p>',
-  pupPdJobType:    '<p>' + getSelectField('GenericListType_regulartemporary') + '</p>'
+  pupPdJobType:    '<p>' + getTextFieldDropdown('GenericListType_regulartemporary_chosen') + '</p>'
 };
 
 /**
