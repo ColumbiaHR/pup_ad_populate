@@ -50,16 +50,19 @@ function replaceText(text,wysiwygIframeId) {
     }
   }
 }
+
+/* ex: getTextField("lRoleID_fieldTitle"); */
 function getTextField(elementID){
   return document.getElementById(elementID).value;
 }
-/* ex: getTextField("lRoleID_fieldTitle"); */
+
+/* ex getSelectField("lDepartmentID"); */
 function getSelectField(elementID){
   //return document.getElementById(elementID).options[document.getElementById(elementID).selectedIndex].text;
   return document.getElementById(elementID)[document.getElementById(elementID).selectedIndex].text;
 }
-/* ex getSelectField("lDepartmentID"); */
 
+/* ex getTextFieldDropdown("'GenericListType_regulartemporary_chosen'"); */
 function getTextFieldDropdown(elementID){
   return document.getElementById(elementID).innerText;
 }
@@ -107,10 +110,10 @@ var pupPdElements = {
   pupPdRegTemp:         getTextField('sOther3'),
   pupPdTempDuration:    getTextField('sOther6'),
   pupPdSalaryDetails:   getTextField('sSalary'),
-  pupPdBargainingUnit:  getTextField('lAgreementTypeID'),
+  pupPdBargainingUnit:  getSelectField('lAgreementTypeID'),
   pupPdHours:           getTextField('sOther5'),
   pupPdSalaryDetails:   getTextField('sSalary'),
-  pupPdJobType:         getTextField('GenericListType_regulartemporary_chosen')
+  pupPdJobType:         getTextFieldDropdown('GenericListType_regulartemporary_chosen')
 };
 
 /**
