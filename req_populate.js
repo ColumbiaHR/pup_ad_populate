@@ -45,7 +45,7 @@ function replaceText(text,wysiwygIframeId) {
   var sel;
   sel = getMceFrame(wysiwygIframeId);
   if (sel) {
-    if ((sel.innerHTML.length > 30 && confirm('Are you sure you want to replace the current text to appear in job advertisement?')) || sel.innerHTML.length <= 30) {
+    if ((sel.innerHTML.length > 30 && confirm('Are you sure you want to add to the current text in the job advertisement?')) || sel.innerHTML.length <= 30) {
       sel.innerHTML = text + sel.innerHTML;
     }
   }
@@ -70,7 +70,12 @@ function getSelectField(elementID){
 
 /* ex getTextFieldDropdown("'GenericListType_regulartemporary_chosen'"); */
 function getTextFieldDropdown(elementID){
-  return document.getElementById(elementID).innerText;
+  if (document.getElementById(elementID).innerText == "Select") {
+    return "";
+  }
+  else {
+    return document.getElementById(elementID).innerText;
+  }
 }
 
 function getDropSearchField(elementID){
