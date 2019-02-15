@@ -60,7 +60,7 @@ function getTextField(elementID){
 function getSelectField(elementID){
   //return document.getElementById(elementID).options[document.getElementById(elementID).selectedIndex].text;
   var getSelected = document.getElementById(elementID).selectedIndex;
-  if (getSelected) {
+  if (getSelected >= 0) {
     return document.getElementById(elementID)[getSelected].text;
   }
   else {
