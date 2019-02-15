@@ -22,7 +22,7 @@ function replaceText(text,wysiwygIframeId) {
  */
 newBody = '<hr />';
 newBody += '<p><span style="color: #2c6bac; font-family: arial, helvetica, sans-serif; font-size: 18pt;">Position Summary</span></p>';
-newBody += '<p>Enter details here.</p><hr />';
+newBody += '<p>Enter details here</p><hr />';
 newBody += '<p><span style="color: #2c6bac; font-family: arial, helvetica, sans-serif; font-size: 18pt;">Responsibilities</span></p>';
 newBody += '<ul><li>Type responsibilities</li></ul><hr />';
 newBody += '<p><span style="color: #2c6bac; font-family: arial, helvetica, sans-serif; font-size: 18pt;">Minimum Qualifications</span></p>';
