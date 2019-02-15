@@ -59,7 +59,8 @@ function getTextField(elementID){
 /* ex getSelectField("lDepartmentID"); */
 function getSelectField(elementID){
   //return document.getElementById(elementID).options[document.getElementById(elementID).selectedIndex].text;
-  return document.getElementById(elementID)[document.getElementById(elementID).selectedIndex].text;
+  var getSelected = document.getElementById(elementID).selectedIndex ? document.getElementById(elementID).selectedIndex : "";
+  return document.getElementById(elementID)[getSelected].text;
 }
 
 /* ex getTextFieldDropdown("'GenericListType_regulartemporary_chosen'"); */
