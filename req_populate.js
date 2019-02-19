@@ -120,10 +120,10 @@ function getEssentialJobDuties(){
 var pupPdElements = {
   pupPdRegTemp:         getTextField('sOther3'),
   pupPdTempDuration:    getTextField('sOther6'),
-  pupPdSalaryDetails:   getTextField('sSalary'),
+  pupPdSalaryDetails:   getTextField('sOther4'),
   pupPdBargainingUnit:  getSelectField('lAgreementTypeID'),
   pupPdHours:           getTextField('sOther5'),
-  pupPdSalaryDetails:   getTextField('sSalary'),
+  pupPdSalaryDetails:   getTextField('sOther4'),
   pupPdJobType:         getTextFieldDropdown('GenericListType_regulartemporary_chosen')
 };
 
