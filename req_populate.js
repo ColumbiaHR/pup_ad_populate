@@ -135,7 +135,7 @@ newBody  = '<ul class="job-attributes">';
 newBody += '<li id="pupPdJobType">Job Type: ' + pupPdElements.pupPdJobType  + '</li>';
 newBody += '<li id="pupPdBargainingUnit">Bargaining Unit: ' + pupPdElements.pupPdBargainingUnit + '</li>';
 newBody += '<li id="pupPdRegTemp">Regular/Temporary: ' + pupPdElements.pupPdRegTemp  + '</li>';
-newBody += '<li id="pupPdTempDuration">Duration if Temporary: ' + pupPdElements.pupPdTempDuration  + '</li>';
+newBody += '<li id="pupPdTempDuration">End Date if Temporary: ' + pupPdElements.pupPdTempDuration  + '</li>';
 newBody += '<li id="pupPdHours">Hours Per Week: ' + pupPdElements.pupPdHours  + '</li>';
 newBody += '<li id="pupPdSalaryDetails">Salary Range: ' + pupPdElements.pupPdSalaryDetails  + '</li>';
 newBody += '</ul>';
