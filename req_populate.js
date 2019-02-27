@@ -78,6 +78,7 @@ function getTextFieldDropdown(elementID){
   }
 }
 
+/* ex getDropSearchField("GenericListType_appointment_chosen"); */
 function getDropSearchField(elementID){
   result = null;
   if (typeof document.querySelectorAll('#' + elementID + ' .result-selected')[0] !== "undefined") {
@@ -89,7 +90,20 @@ function getDropSearchField(elementID){
     }
   return result;
 }
-/* ex getDropSearchField("GenericListType_appointment_chosen"); */
+
+function getReadOnlyField(elementID){
+  var divText = document.getElementById(elementID).innerHTML;
+  return divText.substr(0,divText.indexOf('<')).trim();
+}
+
+function getReadOnlyFieldParent(elementID){
+  var divText = document.getElementById(elementID).parentNode.innerHTML;
+  return divText.substr(0,divText.indexOf('<')).trim();
+}
+
+function chooseFunctions(elementID1,function1,elementID2,function2){
+  //TODO: Somehow identify when fields are locked and choose the appropriate elementID and getText function
+}
 
 function getEssentialJobDuties(){
   /* for each document.querySelectorAll('#JobDutyWrapper div.jobDuty')
