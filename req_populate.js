@@ -101,9 +101,16 @@ function getReadOnlyFieldParent(elementID){
   return divText.substr(0,divText.indexOf('<')).trim();
 }
 
-function chooseFunctions(elementID1,function1,elementID2,function2){
-  //TODO: Somehow identify when fields are locked and choose the appropriate elementID and getText function
-}
+//TODO: Somehow identify when fields are locked and choose the appropriate elementID and getText function
+/*ex: chooseFunction(lAgreementTypeID, getSelectField, agreementTypeWrapper, getReadOnlyField);
+function chooseFunction(elementID1,function1,elementID2,function2){
+  if (document.getElementById(elementID1) !== null ) {
+      return function1(elementID1);
+  }
+  else {
+    return function2(elementID2);
+  }
+}*/
 
 function getEssentialJobDuties(){
   /* for each document.querySelectorAll('#JobDutyWrapper div.jobDuty')
