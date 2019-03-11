@@ -32,7 +32,7 @@ newBody += '<ul><li>Type preferred qualifications</li></ul><hr />';
 newBody += '<p><span style="color: #2c6bac; font-family: arial, helvetica, sans-serif; font-size: 18pt;">Other Requirements</span></p>';
 newBody += '<ul><li>Type other requirements and/or special indicators if CUIMC</li></ul><hr />';
 newBody += '<p>Columbia University is an Equal Opportunity/Affirmative Action Employer / Disability / Veteran</p>';
-newBody += '<p>Columbia University is committed to the hiring of qualified local residents</p>';
+newBody += '<p>Columbia University is committed to the hiring of qualified local residents.</p>';
 //newBody = '<p><span style="color: #2c6bac; font-family: arial, helvetica, sans-serif; font-size: 18pt;">Position Summary</span></p><p>Enter details here. If temporary, indicate duration here.</p><hr /><p><span style="color: #2c6bac; font-family: arial, helvetica, sans-serif; font-size: 18pt;">Responsibilities</span></p><ul><li>Type responsibilities</li></ul><hr /><p><span style="color: #2c6bac; font-family: arial, helvetica, sans-serif; font-size: 18pt;">Minimum Qualifications</span></p><ul><li>Type minimum qualifications</li></ul><hr /><p><span style="color: #2c6bac; font-family: arial, helvetica, sans-serif; font-size: 18pt;">Preferred Qualifications</span></p><ul><li>Type preferred qualifications</li></ul><hr /><p><span style="color: #2c6bac; font-family: arial, helvetica, sans-serif; font-size: 18pt;">Other Requirements</span></p><ul><li>Type other requirements and/or special indicators if CUIMC</li></ul><hr /><p>&nbsp;</p><p><span style="font-size: 9pt;"></span></p>';
 replaceText(newBody, "sOverview_ifr");
 
