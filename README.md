@@ -17,8 +17,8 @@ Two Files:
 
 JavaScript files(scriptlets) that automate populating the Wysiwyg textarea with pre-ready text as well as data from adjacent fields.  These were initially hosted on Github while testing, but are now hosted by CUIT.
 These files are called by the following HTML buttons: 
-- <a href="#" onclick="javascript: void(z=document.body.appendChild(document.createElement('script'))); void(z.language='javascript'); void(z.type='text/javascript'); void(z.id='pup-req-pop'); void(z.src='https://columbiahr.github.io/pup_populate/jd_populate.js'); return false;">Job Ad Pre-Populate</a>
-- <a href="#" onclick="javascript: void(z=document.body.appendChild(document.createElement('script'))); void(z.language='javascript'); void(z.type='text/javascript'); void(z.id='pup-req-pop'); void(z.src='https://columbiahr.github.io/pup_populate/req_populate.js'); return false;">Req Pre-Populate</a>
+- `<a href="#" onclick="javascript: void(z=document.body.appendChild(document.createElement('script'))); void(z.language='javascript'); void(z.type='text/javascript'); void(z.id='pup-req-pop'); void(z.src='https://columbiahr.github.io/pup_populate/jd_populate.js'); return false;">Job Ad Pre-Populate</a>`
+- `<a href="#" onclick="javascript: void(z=document.body.appendChild(document.createElement('script'))); void(z.language='javascript'); void(z.type='text/javascript'); void(z.id='pup-req-pop'); void(z.src='https://columbiahr.github.io/pup_populate/req_populate.js'); return false;">Req Pre-Populate</a>`
 
 The URL paths and filenames should also be as short as possible to stay within the field character limit.
 
