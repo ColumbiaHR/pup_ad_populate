@@ -36,7 +36,7 @@ void(z.src='https://bitbucket.org/_vid/pup_req_job_ad_populate/raw/master/pup_re
  */
 
 function internalCandLang(yesIC){
-  return yesIC === 'Yes' ? '<br>An internal candidate has been identified.' : '';
+  return yesIC === 'Yes' ? '<br>--An internal candidate has been identified.--' : '';
 }
 
 function getMceFrame(wysiwygIframeId){
@@ -164,8 +164,9 @@ newBody += '<li id="pupPdRegTemp">Regular/Temporary: ' + pupPdElements.pupPdRegT
 newBody += '<li id="pupPdTempDuration">End Date if Temporary: ' + pupPdElements.pupPdTempDuration  + '</li>';
 newBody += '<li id="pupPdHours">Hours Per Week: ' + pupPdElements.pupPdHours  + '</li>';
 newBody += '<li id="pupPdSalaryDetails">Salary Range: ' + pupPdElements.pupPdSalaryDetails  + '</li>';
-newBody += '<li id="pupPdInternalCand">' + internalCandLang(pupPdElements.pupPdInternalCand) + '</li>';
 newBody += '</ul>';
+newBody += '<em id="pupPdInternalCand">' + internalCandLang(pupPdElements.pupPdInternalCand) + '</em>';
+
 replaceText(newBody, "sOverview_ifr");
 
 /**
