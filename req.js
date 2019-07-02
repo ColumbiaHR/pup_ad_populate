@@ -35,6 +35,8 @@ void(z.src='https://bitbucket.org/_vid/pup_req_job_ad_populate/raw/master/pup_re
  * Trigger MCE code evaluation (to format code if needed)
  */
 
+var internalCandLang = '<br>An internal candidate has been identified.';
+
 function getMceFrame(wysiwygIframeId){
   var x = document.getElementById(wysiwygIframeId);
   var y = (x.contentWindow || x.contentDocument);
@@ -145,7 +147,8 @@ var pupPdElements = {
   pupPdBargainingUnit:  getSelectField('lAgreementTypeID'),
   pupPdHours:           getTextField('sOther5'),
   pupPdSalaryDetails:   getTextField('sOther4'),
-  pupPdJobType:         getTextFieldDropdown('GenericListType_regulartemporary_chosen')
+  pupPdJobType:         getTextFieldDropdown('GenericListType_regulartemporary_chosen'),
+  pupPdInternalCand:    getTextFieldDropdown('GenericListType_internalcandidate')
 };
 
 /**
@@ -159,6 +162,7 @@ newBody += '<li id="pupPdRegTemp">Regular/Temporary: ' + pupPdElements.pupPdRegT
 newBody += '<li id="pupPdTempDuration">End Date if Temporary: ' + pupPdElements.pupPdTempDuration  + '</li>';
 newBody += '<li id="pupPdHours">Hours Per Week: ' + pupPdElements.pupPdHours  + '</li>';
 newBody += '<li id="pupPdSalaryDetails">Salary Range: ' + pupPdElements.pupPdSalaryDetails  + '</li>';
+newBody += '<li id="pupPdInternalCand">' + pupPdElements.pupPdInternalCand == "Yes" ? internalCandLang : "" + '</li>';
 newBody += '</ul>';
 replaceText(newBody, "sOverview_ifr");
 
