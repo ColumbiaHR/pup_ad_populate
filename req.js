@@ -148,7 +148,7 @@ var pupPdElements = {
   pupPdHours:           getTextField('sOther5'),
   pupPdSalaryDetails:   getTextField('sOther4'),
   pupPdJobType:         getTextFieldDropdown('GenericListType_regulartemporary_chosen'),
-  pupPdInternalCand:    getTextFieldDropdown('GenericListType_internalcandidate')
+  pupPdInternalCand:    getTextFieldDropdown('GenericListType_internalcandidate_chosen')
 };
 
 /**
@@ -162,7 +162,7 @@ newBody += '<li id="pupPdRegTemp">Regular/Temporary: ' + pupPdElements.pupPdRegT
 newBody += '<li id="pupPdTempDuration">End Date if Temporary: ' + pupPdElements.pupPdTempDuration  + '</li>';
 newBody += '<li id="pupPdHours">Hours Per Week: ' + pupPdElements.pupPdHours  + '</li>';
 newBody += '<li id="pupPdSalaryDetails">Salary Range: ' + pupPdElements.pupPdSalaryDetails  + '</li>';
-newBody += '<li id="pupPdInternalCand">' + pupPdElements.pupPdInternalCand == "Yes" ? internalCandLang : "" + '</li>';
+newBody += '<li id="pupPdInternalCand">' + if(pupPdElements.pupPdInternalCand === "Yes"){internalCandLang} + '</li>';
 newBody += '</ul>';
 replaceText(newBody, "sOverview_ifr");
 
