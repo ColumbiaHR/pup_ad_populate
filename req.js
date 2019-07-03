@@ -36,7 +36,7 @@ void(z.src='https://bitbucket.org/_vid/pup_req_job_ad_populate/raw/master/pup_re
  */
 
 function internalCandLang(yesIC){
-  return yesIC === 'Yes' ? '<br><b>A strong internal candidate has been identified for this position, however, we are still accepting applications from other qualified candidates</b>' : '';
+  return yesIC === 'Yes' ? '<br><b>A strong internal candidate has been identified for this position, however, we are still accepting applications from other qualified candidates.</b>' : '';
 }
 
 function getMceFrame(wysiwygIframeId){
