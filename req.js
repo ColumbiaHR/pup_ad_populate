@@ -165,7 +165,7 @@ newBody += '<li id="pupPdTempDuration">End Date if Temporary: ' + pupPdElements.
 newBody += '<li id="pupPdHours">Hours Per Week: ' + pupPdElements.pupPdHours  + '</li>';
 newBody += '<li id="pupPdSalaryDetails">Salary Range: ' + pupPdElements.pupPdSalaryDetails  + '</li>';
 newBody += '</ul>';
-newBody += '<em id="pupPdInternalCand">' + internalCandLang(pupPdElements.pupPdInternalCand) + '</em>';
+newBody += '<div id="pupPdInternalCand">' + internalCandLang(pupPdElements.pupPdInternalCand) + '</div>';
 
 replaceText(newBody, "sOverview_ifr");
 
